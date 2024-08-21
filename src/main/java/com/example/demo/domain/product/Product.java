@@ -20,9 +20,12 @@ public class Product {
 
     private Integer price_in_cents;
 
+    private Boolean active;
+
     public Product(RequestProduct resquestProduct){
         this.name = resquestProduct.name();
         this.price_in_cents = resquestProduct.price_in_cents();
+        this.active = true;
     }
 
 }
